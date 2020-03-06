@@ -1,0 +1,39 @@
+            -----------------API_6_invest模块--------------------
+1、TypeError: http_request() missing 1 required positional argument: 'param'
+   原因:resp=HttpRequest.http_request(method, url,param,cookies=getattr(GetData,'COOKIE'))，
+   把HttpRequest( )写成了HttpRequest
+2、NameError: name 'TestResult' is not defined
+    原因：断言失败，执行时跳过了 TestResult = 'Pass' 和 TestResult = 'Failed'，导致TestResult没有值
+    解决：把except AssertionError as e:改成except Exception as e:，把错误捕获并抛出来，找到并解决
+    断言失败的原因
+3、invest_amount = param['amount']
+KeyError: 'amount'
+原因：第一条用例正常登录不需要
+invest_amount = param['amount']
+expect_amount = before_amount - invest_amount
+self.assertEqual(expect_amount, after_amount)
+解决：需要时再执行
+
+4、File "<string>", line 1
+    sql':'selece LeaveAmount from member where MobilePhone = 18300070753'
+         ^
+SyntaxError: invalid syntax    语法错误:无效的语法
+原因：Exele中没有把sql':'selece LeaveAmount from member where MobilePhone = 18300070753'用｛｝括起来，
+加上｛｝。
+
+5、pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'selece LeaveAmount from member
+ where MobilePhone = 18300070753' at line 1")
+ 编程错误:(1064，“你有一个错误的SQL语法;检查与MySQL服务器版本对应的手册，以获得使用near \的正确语法
+原因：selece 应该是select ,事实上把错误复制过来时pycharm已经标出了波浪线
+
+
+                    ---------------------API_6_recharge2模块--------------------------
+
+1、expect_amount = before_amount - recharge_amount
+TypeError: unsupported operand type(s) for -: 'decimal.Decimal' and 'str'
+原因：数据类型不对，recharge_amount = param['amount'] ，得到的是str，不能直接用于运算，
+所以改为recharge_amount = int(param['amount'])即可。
+
+2、Decimal('1262000.00') != Decimal('962000.00')
+原因：expect_amount = before_amount - recharge_amount应该改为expect_amount = before_amount + recharge_amount

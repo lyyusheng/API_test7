@@ -1,0 +1,6 @@
+1、AttributeError: module 're' has no attribute 'compile'
+解决方法：
+因为源文件取名为“re.py”，把源文件“re.py”换了个文件名, 不能用跟系统库同样名字.
+
+2、configparser.NoOptionError: No option ' normal_pwd' in section: 'data'
+' normal_pwd'多了个空格

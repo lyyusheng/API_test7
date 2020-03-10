@@ -1,0 +1,9 @@
+test_001 (learn_unitest.test_case.TestAdd) ... ok
+test_002 (learn_unitest.test_case.TestAdd) ... ok
+test_003 (learn_unitest.test_case.TestAdd) ... ok
+test_004 (learn_unitest.test_case.TestAdd) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

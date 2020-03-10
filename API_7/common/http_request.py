@@ -4,6 +4,7 @@
 # 2）测试用例的数据存储在Excel中，并编写一个从Excel中读取数据的测试类，包含的函数能够读取测试
 # 数据，并且能够写回测试结果，要求有返回值。 3）新建一个run.py文件，在这里面完成Excel数据的读
 # 取以及完成用例的执行，并写回测试结果到Excel文档里面。 至此已经完成了接口自动化测试的第一步。
+from API_7.common import base
 import requests
 
 resp1 = None

@@ -6,7 +6,7 @@
 
 # 读配置文件  引入configparser模块，里面有很多类，其中一个类是Configparser
 from configparser import ConfigParser  # 导入ConfigParser类
-from API_test.API_7.common import project_path
+from API_7.common import project_path
 
 
 # 创建对象

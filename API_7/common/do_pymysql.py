@@ -1,5 +1,5 @@
-from API_test.API_7.common import project_path
-from API_test.API_7.common.read_config import ReadConfig
+from API_7.common import project_path
+from API_7.common.read_config import ReadConfig
 import pymysql
 
 

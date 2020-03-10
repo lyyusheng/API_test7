@@ -1,9 +1,9 @@
 import unittest
-from API_test.API_7.common.do_excel import DoExcel
-from API_test.API_7.common import project_path
-from API_test.API_7.common.http_request import HttpRequest
-from API_test.API_7.common.my_log import MyLog
-from API_test.API_7.common.get_data import GetData
+from API_7.common.do_excel import DoExcel
+from API_7.common import project_path
+from API_7.common.http_request import HttpRequest
+from API_7.common.my_log import MyLog
+from API_7.common.get_data import GetData
 from ddt import ddt, unpack, data
 from API_test.API_7.common.do_pymysql import DoMysql
 

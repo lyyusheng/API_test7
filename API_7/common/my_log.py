@@ -3,7 +3,7 @@
 # 日志收集器logger    默认的日志收集器 rootlogger
 import logging
 from FuXi2.read_config import ReadConfig
-from API_test.API_7.common import project_path
+from API_7.common import project_path
 
 
 class MyLog:

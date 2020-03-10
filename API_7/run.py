@@ -28,4 +28,4 @@ with open(project_path.report_path, 'wb') as file:
                                               title="2020年2月份API_6测试用例",
                                               description='温习时写的',
                                               tester='liyusheng')
-    runner.run(suite)  # 执行用例（容易忘记,不写的话测试报告会空白）
+    runner.run(suite)  # 执行用例（容易忘记,不写的话测试报告会空白.）

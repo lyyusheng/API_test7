@@ -116,8 +116,8 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">2020年2月份API_6测试用例</h1>
 <p class='attribute'><strong>测试人员 : </strong> liyusheng</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-03-06 06:54:23</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:03.509350</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-03-11 03:12:31</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:04.852399</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 3，通过 3，通过率= 100.00%</p>
 
 <p class='description'>温习时写的</p>
@@ -168,9 +168,9 @@ function html_escape(s) {
     <div id='div_pt1_1' class="collapse in" align="left">
     <pre>
     
-pt1_1: 2020-03-06 06:54:23,988-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
-2020-03-06 06:54:23,989-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070753","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":None,"msg":"登录成功"}'}
-2020-03-06 06:54:25,350-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+pt1_1: 2020-03-11 03:12:31,396-[INFO]-my_log.py-api_log-日志信息:-------正在测试login模块里面第1条测试用例：正常登录
+2020-03-11 03:12:31,407-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 1, 'Module': 'login', 'Title': '正常登录', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': '{"mobilephone":"18300070753","pwd":"12345678"}', 'sql': None, 'ExpectedResult': '{"status" :1,"code":"10001","data":None,"msg":"登录成功"}'}
+2020-03-11 03:12:31,796-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
 
 
     </pre>
@@ -189,9 +189,9 @@ pt1_1: 2020-03-06 06:54:23,988-[INFO]-my_log.py-api_log-日志信息:-------正�
     <div id='div_pt1_2' class="collapse in" align="left">
     <pre>
     
-pt1_2: 2020-03-06 06:54:25,351-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常投资
-2020-03-06 06:54:25,351-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常投资', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/bidLoan', 'Params': '{"mobilephone":"18300070752","memberId":"287324","password":"12345678","loanId":140029,"amount":1000}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070753" \'}', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'竞标成功'}"}
-2020-03-06 06:54:27,369-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+pt1_2: 2020-03-11 03:12:31,797-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第2条测试用例：正常投资
+2020-03-11 03:12:31,798-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 2, 'Module': 'recharge', 'Title': '正常投资', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/bidLoan', 'Params': '{"mobilephone":"18300070752","memberId":"287324","password":"12345678","loanId":140029,"amount":1000}', 'sql': '{\'sql\':\'select LeaveAmount from member where mobilephone = "18300070753" \'}', 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'竞标成功'}"}
+2020-03-11 03:12:36,036-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
 
 
     </pre>
@@ -210,9 +210,9 @@ pt1_2: 2020-03-06 06:54:25,351-[INFO]-my_log.py-api_log-日志信息:-------正�
     <div id='div_pt1_3' class="collapse in" align="left">
     <pre>
     
-pt1_3: 2020-03-06 06:54:27,370-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
-2020-03-06 06:54:27,371-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/bidLoan', 'Params': '{"memberId":"287324","password":"12345678"," loanId":140029,"amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data': None,'msg':'参数错误:所有参数都不能为空'}"}
-2020-03-06 06:54:27,494-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+pt1_3: 2020-03-11 03:12:36,041-[INFO]-my_log.py-api_log-日志信息:-------正在测试recharge模块里面第3条测试用例：不输入金额
+2020-03-11 03:12:36,042-[INFO]-my_log.py-api_log-日志信息:测试数据是：{'CaseId': 3, 'Module': 'recharge', 'Title': '不输入金额', 'Method': 'GET', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/bidLoan', 'Params': '{"memberId":"287324","password":"12345678"," loanId":140029,"amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'11003','data': None,'msg':'参数错误:所有参数都不能为空'}"}
+2020-03-11 03:12:36,246-[INFO]-my_log.py-api_log-日志信息:实际结果：{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
 
 
     </pre>

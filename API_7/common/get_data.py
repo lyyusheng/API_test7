@@ -1,8 +1,8 @@
 # 反射
 import re
 
-from API_test.API_7.common import read_config
-from API_test.API_7.common import project_path
+from API_7.common import read_config
+from API_7.common import project_path
 
 config = read_config.ReadConfig(project_path.conf_path)
 

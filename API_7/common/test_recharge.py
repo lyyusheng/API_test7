@@ -1,10 +1,10 @@
 import unittest
 import json
 import warnings  # 解决出现“ResourceWarning: Enable tracemalloc to get the object allocation traceback”
-from API_test.API_7.common.do_excel import DoExcel
-from API_test.API_7.common import project_path
-from API_test.API_7.common.http_request import HttpRequest
-from API_test.API_7.common.my_log import MyLog
+from API_7.common.do_excel import DoExcel
+from API_7.common import project_path
+from API_7.common.http_request import HttpRequest
+from API_7.common.my_log import MyLog
 from ddt import ddt, unpack, data
 
 # 这是第一种获取cookies的方式，设置全局变量

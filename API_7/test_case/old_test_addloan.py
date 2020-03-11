@@ -11,9 +11,9 @@ from API_7.common import project_path
 from API_7.common.get_data import GetData
 from API_7.common.do_pymysql import DoMysql
 
-# 测试充值
 from API_7.common.http_request import HttpRequest
 
+# 测试充值
 test_data = DoExcel(project_path.case_path, 'add_loan').read_case('AddLoanCASE')  # 获取测试数据
 my_log = MyLog()
 
